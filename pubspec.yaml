@@ -1,0 +1,28 @@
+name: file_picker_windows
+description: Windows implementation of the location plugin
+homepage: https://docs.page/Lyokone/flutterlocation
+repository: https://github.com/Lyokone/flutterlocation
+version: 5.0.0-dev.0
+publish_to: none
+
+environment:
+  sdk: ">=3.0.0"
+  flutter: ">=3.0.0"
+
+flutter:
+  plugin:
+    implements: location
+    platforms:
+      windows:
+        dartPluginClass: FilePickerWindows
+
+dependencies:
+  flutter:
+    sdk: flutter
+  file_picker_platform_interface:
+    git:
+      url: https://github.com/Eu-Arthur/flutter_file_picker_platform_interface.git
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  very_good_analysis: ^3.0.0
